@@ -1,0 +1,16 @@
+-- Create Database
+CREATE DATABASE IF NOT EXISTS stud;
+
+-- Use Database
+USE stud;
+
+-- Create Table
+CREATE TABLE IF NOT EXISTS student (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    phone VARCHAR(15),
+    address VARCHAR(255),
+    gender ENUM('masculin', 'feminine'),
+    certi VARCHAR(255)
+);
